@@ -74,7 +74,7 @@ namespace cli_life
 
         private void LoadFromFile(string filePath)
         {
-            filePath = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\..\\", filePath);
+            filePath = Path.Combine(Directory.GetCurrentDirectory(), filePath);
             try
             {
                 using StreamReader reader = new StreamReader(filePath);
