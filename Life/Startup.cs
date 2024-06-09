@@ -8,7 +8,7 @@ public class Startup
     public Startup()
     {
         // Создаем конфигурацию из файла appsettings.json
-        string configFilePath = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\..\\appsettings.json");
+        string configFilePath = Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json");
         IConfiguration configuration = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
             .AddJsonFile(configFilePath, optional: false, reloadOnChange: true)
